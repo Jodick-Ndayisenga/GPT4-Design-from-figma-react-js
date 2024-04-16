@@ -1,0 +1,182 @@
+.jedr__navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 6rem;
+    
+}
+.sticky{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: #ff7200;
+
+}
+.jedr__navbar .jedr-right-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+
+
+.jedr__navbar .jedr-right-links .humburger_menu .nav__links_route{
+    width: 100%;
+    font-size: 1.5rem;
+    display: block;
+    margin: 1.2rem 1rem;
+}
+
+
+.jedr__navbar .jedr__navbar-links_logo h1{
+    margin-right: 4rem;
+    color: #fff;
+}
+
+.jedr__navbar .jedr-right-links .jedr__navbar-links_container{
+    margin-right: 4rem;
+    display: flex;
+}
+
+.jedr__navbar .jedr-right-links .jedr__navbar-links_container .nav__links_route{
+    color: #fff;
+    margin-right:2rem;
+    font-size: 1.3rem;
+    transition: all 0.4s ease;
+}
+
+.jedr__navbar .jedr-right-links .jedr__navbar-links_container .nav__links_route:hover{
+    color: #ff7200;
+}
+
+
+.jedr__navbar .login_and_signup .jedr_login_btn{
+    color: #fff;
+    padding: 0.5rem 1rem;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+
+.jedr__navbar .login_and_signup .jedr_signup_btn{
+    padding: 0.5rem 1rem;
+    color: #fff;
+    background: #ff7200;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+
+
+.jedr__navbar-menu{display: none;}
+
+
+@media screem and (max-width: 1024px) {
+
+    .jedr__navbar {
+        padding: 1rem 2rem;
+    }
+
+    .jedr__navbar-menu{
+        display: block;
+        
+    }
+    .jedr__navbar .jedr-right-links .jedr__navbar-links_container .nav__links_route{
+        color: #fff;
+        margin-right:2rem;
+        font-size: 1rem;
+        transition: all 0.4s ease;
+    }
+    .jedr__navbar .jedr-right-links .jedr__navbar-links_container{
+        margin-right: 2rem;
+    }
+}
+
+@media screen and (max-width: 750px) {
+
+    .jedr__navbar {
+        padding: 1rem 1.2rem;
+    }
+
+    .jedr__navbar-menu{
+        display: block;  
+    }
+    .jedr__navbar .jedr-right-links .jedr__navbar-links_container .nav__links_route{
+        color: #fff;
+        margin-right:1rem;
+        font-size: 1rem;
+        transition: all 0.4s ease;
+    }
+    
+    .jedr__navbar .jedr-right-links .jedr__navbar-links_container{
+        display: none;
+    }
+    .jedr__navbar .jedr-right-links .humburger_menu{
+        position: absolute;
+        top: 60px;
+        right: -60px;
+        background-color: cadetblue;
+        display: block;
+    }
+}
+.jedr__navbar-menu_container{
+    width: 145px;
+    margin-right: 5px;
+}
+.jedr__navbar-menu_container-links-sign{
+    margin-right: 10px;
+    margin-bottom: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.jedr_login_btn_humburger{
+    color: #ff7200;
+    font-size: 20px;
+}
+.jedr_signup_btn_humburger{
+    font-size: 20px;
+}
+
+@media screen and (max-width:500px) {
+    .jedr__navbar .jedr-right-links .jedr__navbar-links_container .nav__links_route{
+        margin-right:1rem;
+        font-size: 1.3rem;
+    }
+    .jedr__navbar {
+        padding: 1rem 1.2rem;
+    }
+    .jedr__navbar-menu{display: block;}
+    .jedr__navbar .jedr-right-links .humburger_menu .nav__links_route{
+        width: 100%;
+        font-size: 1.5rem;
+        display: block;
+        margin: 1.2rem 1rem;
+    }
+    .jedr__navbar .jedr__navbar-links_logo h1{
+        font-size: 1.7rem;
+    }
+    .jedr__navbar .login_and_signup{display: none;}
+
+    .jedr__navbar .login_and_signup .jedr_signup_btn,
+    .jedr__navbar .login_and_signup .jedr_login_btn
+    {
+        padding: 0.4rem;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 20px;
+        border-radius: 2px;
+    }
+}
